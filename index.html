@@ -111,11 +111,11 @@ BODY {
 <p class="styleTittle" align="center">Joint Correcting and Refinement for Balanced Low-Light Image Enhancement
 </p>
 
-<p align="center"> <font size = 4>ACM International Conference on Multimedia 2023</p>
+<p align="center"> <font size = 4>IEEE Transactions on Multimedia</p>
 
 <p align="center"><span class="STYLEAuthor"> 
-    <a target="_blank">Zihao Zhang</a>, &nbsp;&nbsp;
-    <a target="_blank">Jie Wang</a>, &nbsp;&nbsp;
+    <a target="_blank">Nana Yu</a>, &nbsp;&nbsp;
+    <a target="_blank">Hong Shi</a>, &nbsp;&nbsp;
     <a href="http://cic.tju.edu.cn/faculty/hanyahong/" target="_blank">Yahong Han</a>, <span style="font-style: oblique"></span> &nbsp;&nbsp;
    
     </span> 
@@ -130,7 +130,7 @@ BODY {
 <p class="STYLESection" align="center">Abstract</p>
 <hr style="BORDER-LEFT-STYLE: none; BORDER-TOP: gray 3px groove; HEIGHT: 0px; BORDER-BOTTOM-STYLE: none; BORDER-RIGHT-STYLE: none">
 <div class="project-page well" >
-<p class="styleAbstract" align="justify"> Most of the existing bi-modal (RGB-D or RGB-T) salient object detection methods attempt to integrate multimodality information through various fusion strategies. However, existing methods lack a clear definition of salient regions before feature fusion, which results in poor model robustness. To tackle this problem, we propose a novel prototype, the saliency prototype, which captures common characteristic information among salient objects. A prototype contains inherent characteristics information of multiple salient objects, which can be used for feature enhancement of various salient objects. By utilizing the saliency prototype, we provide a clearer definition of salient regions and enable the model to focus on these regions before feature fusion, avoiding the influence of complex backgrounds during the feature fusion stage. Additionally, we utilize the saliency prototypes to address the quality issue of auxiliary modality. Firstly, we apply the saliency prototypes obtained by the primary modality to perform semantic enhancement of the auxiliary modality. Secondly, we dynamically allocate weights for the auxiliary modality during the feature fusion stage in proportion to its quality. Thus, we develop a new bi-modal salient detection architecture Saliency Prototype Network (SPNet), which can be used for both RGB-D and RGB-T SOD. Extensive experimental results on RGB-D and RGB-T SOD datasets demonstrate the effectiveness of the proposed approach against the state-of-the-art.</p>
+<p class="styleAbstract" align="justify"> Low-light image enhancement tasks demand an appropriate balance among brightness, color, and illumination. While existing methods often focus on one aspect of the image without considering how to pay attention to this balance, which will cause problems of color distortion and overexposure etc. This seriously affects both human visual perception and the performance of high-level visual models. In this work, a novel synergistic structure is proposed which can balance brightness, color, and illumination more effectively. Specifically, the proposed method, so-called Joint Correcting and Refinement Network (JCRNet), which mainly consists of three stages to balance brightness, color, and illumination of enhancement. Stage 1: we utilize a basic encoder-decoder and local supervision mechanism to extract local information and more comprehensive details for enhancement. Stage 2: cross-stage feature transmission and spatial feature transformation further facilitate color correction and feature refinement. Stage 3: we employ a dynamic illumination adjustment approach to embed residuals between predicted and ground truth images into the model, adaptively adjusting illumination balance. Extensive experiments demonstrate that the proposed method exhibits comprehensive performance advantages over 21 state-of-the-art methods on 9 benchmark datasets. Furthermore, a more persuasive experiment has been conducted to validate our approach the effectiveness in downstream visual tasks (e.g., saliency detection). Compared to several enhancement models, the proposed method effectively improves the segmentation results and quantitative metrics of saliency detection.</p>
 </div>
 <br><br>
 </div>
@@ -139,7 +139,7 @@ BODY {
 
 <div class="container">
 <a name="framework"></a>
-<p class="STYLESection" align="center">Overall architecture of the Saliency Prototype Network</p>
+<p class="STYLESection" align="center">Overall architecture of the Joint Correcting and Refinement Network</p>
 <hr style="BORDER-LEFT-STYLE: none; BORDER-TOP: gray 3px groove; HEIGHT: 0px; BORDER-BOTTOM-STYLE: none; BORDER-RIGHT-STYLE: none">
 
 <table width="100%" border="0">
