@@ -1,1 +1,264 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 
+<style type="text/css">
+.styleTittle {
+	FONT-SIZE: 45px; FONT-FAMILY: "Arial", Times, serif; 
+}
+.STYLEAuthor {
+	FONT-SIZE: 20px; FONT-FAMILY: "Arial", Times, serif
+}
+.styleAffiliation {
+	FONT-SIZE: 16px; FONT-FAMILY: "Arial", Times, serif
+}
+.STYLESection {
+	FONT-SIZE: 30px; FONT-FAMILY: "Arial", Times, serif; FONT-WEIGHT: bold
+}
+.styleAbstract {
+	FONT-SIZE: 20px; FONT-FAMILY: "Arial";
+}
+.STYLECaption {
+	FONT-SIZE: 16px; FONT-FAMILY: "Arial"
+}
+.STYLECitation {
+	FONT-SIZE: 17px; FONT-FAMILY: "Arial"
+}
+BODY {
+	BACKGROUND-IMAGE: none
+}
+HR {
+	BORDER-TOP: purple 1px solid; BORDER-RIGHT: purple 1px solid; BORDER-BOTTOM: purple 1px solid; BORDER-LEFT: purple 1px solid
+}
+SPAN.style231{
+	FONT-FAMILY: "Times New Roman","serif"; mso-style-name: style231; mso-style-unhide: no; mso-ansi-font-size: 12.0pt; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"
+}
+SPAN.style2311 {
+	FONT-FAMILY: "Times New Roman","serif"; mso-style-name: style231; mso-style-unhide: no; mso-ansi-font-size: 12.0pt; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"
+}
+SPAN.style23111 {
+	FONT-FAMILY: "Times New Roman","serif"; mso-style-name: style231; mso-style-unhide: no; mso-ansi-font-size: 12.0pt; mso-bidi-font-size: 12.0pt; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"
+}
+.style47 {
+	FONT-SIZE: 16pt; COLOR: #000000
+}
+.style55 {
+	FONT-SIZE: 16px; FONT-FAMILY: "Times New Roman", Times, serif; FONT-WEIGHT: bold
+}
+A:link {
+	TEXT-DECORATION: none
+}
+A:visited {
+	TEXT-DECORATION: none
+}
+A:hover {
+	TEXT-DECORATION: none
+}
+A:active {
+	TEXT-DECORATION: none
+}
+BODY {	
+}
+
+#container {
+	WIDTH: 1024px; MARGIN: 0px auto;
+}
+
+</style>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SPNet
+</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/template.css" rel="stylesheet">
+    <script type="text/javascript"><!-- 
+    function obfuscate( domain, name ) { document.write('<a href="mai' + 
+    'lto:' + name + '@' + domain + '">' + name + '@' + domain + '</' + 'a>'); }
+    // --></script>
+	
+  </head>
+
+<meta name="GENERATOR" content="MSHTML 11.00.10570.1001"></head>
+<body onLoad=" ">
+<div id="container" class="STYLE37">
+
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="background:#7B7B7B">
+        <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="container">
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#abstract">Abstract</a></li>
+            <li><a href="index.html#framework">Framework</a></li>
+            <li><a href="index.html#overview">Overview</a></li>
+            <li><a href="index.html#example">Example</a></li>
+            <li><a href="index.html#code">Code</a></li>
+            <li><a href="index.html#citation">Citation</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        </div>
+
+    </div>
+</nav>
+
+
+
+<p class="styleTittle" align="center">Saliency Prototype for RGB-D and RGB-T Salient Object Detection
+</p>
+
+<p align="center"> <font size = 4>ACM International Conference on Multimedia 2023</p>
+
+<p align="center"><span class="STYLEAuthor"> 
+    <a target="_blank">Zihao Zhang</a>, &nbsp;&nbsp;
+    <a target="_blank">Jie Wang</a>, &nbsp;&nbsp;
+    <a href="http://cic.tju.edu.cn/faculty/hanyahong/" target="_blank">Yahong Han</a>, <span style="font-style: oblique"></span> &nbsp;&nbsp;
+   
+    </span> 
+    </p>
+
+<p class="styleAffiliation" align="center">
+    College of Intelligence and Computing, and Tianjin Key Lab of Machine Learning, Tianjin University<br>
+<br>
+
+<div class="container">
+<a name="abstract"></a>
+<p class="STYLESection" align="center">Abstract</p>
+<hr style="BORDER-LEFT-STYLE: none; BORDER-TOP: gray 3px groove; HEIGHT: 0px; BORDER-BOTTOM-STYLE: none; BORDER-RIGHT-STYLE: none">
+<div class="project-page well" >
+<p class="styleAbstract" align="justify"> Most of the existing bi-modal (RGB-D or RGB-T) salient object detection methods attempt to integrate multimodality information through various fusion strategies. However, existing methods lack a clear definition of salient regions before feature fusion, which results in poor model robustness. To tackle this problem, we propose a novel prototype, the saliency prototype, which captures common characteristic information among salient objects. A prototype contains inherent characteristics information of multiple salient objects, which can be used for feature enhancement of various salient objects. By utilizing the saliency prototype, we provide a clearer definition of salient regions and enable the model to focus on these regions before feature fusion, avoiding the influence of complex backgrounds during the feature fusion stage. Additionally, we utilize the saliency prototypes to address the quality issue of auxiliary modality. Firstly, we apply the saliency prototypes obtained by the primary modality to perform semantic enhancement of the auxiliary modality. Secondly, we dynamically allocate weights for the auxiliary modality during the feature fusion stage in proportion to its quality. Thus, we develop a new bi-modal salient detection architecture Saliency Prototype Network (SPNet), which can be used for both RGB-D and RGB-T SOD. Extensive experimental results on RGB-D and RGB-T SOD datasets demonstrate the effectiveness of the proposed approach against the state-of-the-art.</p>
+</div>
+<br><br>
+</div>
+
+
+
+<div class="container">
+<a name="framework"></a>
+<p class="STYLESection" align="center">Overall architecture of the Saliency Prototype Network</p>
+<hr style="BORDER-LEFT-STYLE: none; BORDER-TOP: gray 3px groove; HEIGHT: 0px; BORDER-BOTTOM-STYLE: none; BORDER-RIGHT-STYLE: none">
+
+<table width="100%" border="0">
+  <tbody>
+  <tr>
+    <th scope="col"><img src="./figures/framework.png" width="98%"></th></tr></tbody></table>
+<p class="styleCaption" align="justify"> Fig. 1: Overall architecture of the Saliency Prototype Network. After feature extraction, the RGB and D/T images perform prototype clustering separately to focus on salient regions before performing cross-modal feature fusion. On the right side, the AMSE module generates parameters for cross-modal fusion, guiding the fusion process but not directly participating in the overall architecture.
+</p>
+<br><br>
+</div>
+
+
+
+<div class="container">
+<a name="overview"></a>
+<p class="STYLESection" align="center">Quantitative Evaluation</p>
+<hr style="BORDER-LEFT-STYLE: none; BORDER-TOP: gray 3px groove; HEIGHT: 0px; BORDER-BOTTOM-STYLE: none; BORDER-RIGHT-STYLE: none">
+
+<table width="100%" border="0">
+  <tbody>
+  <tr>
+    <th scope="col"><img src="./figures/f1.png" width="98%"></th></tr></tbody></table>
+<p class="styleCaption" align="justify">Table. 1: S-measure, adaptive F-measure, adaptive E-measure, MAE comparisons with different RGB-D models. The best result is
+in bold. "¯¯" means that the method does not publish test results for this dataset or code.
+</p>
+<br><br>
+
+
+<table width="100%" border="0">
+  <tbody>
+  <tr>
+    <th scope="col"><img src="./figures/f2.png" width="98%"></th></tr></tbody></table>
+<p class="styleCaption" align="justify">Table. 2: S-measure, adaptive F-measure, adaptive E-measure, MAE comparisons with different RGB-T models. First column
+represents the RGB-D methods adapted for RGB-T. Second column represents conventional RGB-T methods. Third column represents CNN-based RGB-T methods. Fourth column represents Transform-based RGB-T methods.
+</p>
+<br><br>
+</div>
+
+    <table width="100%" border="0">
+  <tbody>
+  <tr>
+    <th scope="col"><img src="./figures/f3.png" width="98%"></th></tr></tbody></table>
+<p class="styleCaption" align="justify"> Fig. 2: P-R curves comparisons of different models on six datasets of RGB-D and RGB-T.
+</p>
+<br><br>
+</div>
+
+
+<div class="container">
+<a name="example"></a>
+<p class="STYLESection" align="center">Qualitative Evaluation</p>
+<hr style="BORDER-LEFT-STYLE: none; BORDER-TOP: gray 3px groove; HEIGHT: 0px; BORDER-BOTTOM-STYLE: none; BORDER-RIGHT-STYLE: none">
+
+<table width="100%" border="0">
+  <tbody>
+  <tr>
+    <th scope="col"><img src="./figures/f5.png" width="98%"></th></tr></tbody></table>
+<p class="styleCaption" align="justify"> Fig. 3: Visual comparison results with other the state-of-the-art RGB-D models.
+</p>
+<br><br>
+</div>
+
+
+<div class="container">
+<a name="code"></a>
+<p class="STYLESection" align="center">Source Code</p>
+<hr style="BORDER-LEFT-STYLE: none; BORDER-TOP: gray 3px groove; HEIGHT: 0px; BORDER-BOTTOM-STYLE: none; BORDER-RIGHT-STYLE: none">
+
+<p class="STYLEAuthor">
+<a href="https://github.com/ZZ2490/SPNet">SPNet</a>
+
+
+</p><br>
+</div>
+
+
+<div class="container">
+<a name="citation"></a>
+<p class="STYLESection" align="center">Citation</p>
+<hr style="BORDER-LEFT-STYLE: none; BORDER-TOP: gray 3px groove; HEIGHT: 0px; BORDER-BOTTOM-STYLE: none; BORDER-RIGHT-STYLE: none">
+<p class="STYLECitation">
+  <!-- @Article{CISA22,<br>
+  author    = {Yucheng Shi, Yahong Han, Qinghua Hu, Yi Yang, and  Qi Tian},<br>
+  title     = {Query-efficient Black-box Adversarial Attack with Customized Iteration and Sampling},<br>
+  journal   = {IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)},<br>  
+  year      = {2022},<br>
+  doi       = {10.1109/TPAMI.2022.3169802}<br>
+  }</p> 
+<br> -->
+
+<p class="lead">
+    If you find this useful in your work, please consider citing the following reference:
+    <div class="highlight">
+    <pre> <code>@Article{SPNet,
+    author    = {Zihao Zhang, Jie Wang, Yahong Han},
+    title     = {Saliency Prototype for RGB-D and RGB-T Salient Object Detection},
+    journal   = {},
+    year      = {2023},
+    doi       = {}
+    }
+</code> </pre> 
+
+
+</div>
+
+
+<div class="container">
+<a name="contact"></a>
+<p class="STYLESection" align="center">Contact</p>
+<hr style="BORDER-LEFT-STYLE: none; BORDER-TOP: gray 3px groove; HEIGHT: 0px; BORDER-BOTTOM-STYLE: none; BORDER-RIGHT-STYLE: none">
+</div>
+
+<p class="STYLEAuthor">
+Any question regarding this work can be addressed to 
+<a href="zhangzihao2490@tju.edu.cn">zhangzihao2490@@tju.edu.cn</a>.
+</p
+<br><br>
+
+
+    
+</pre></div>
+</body></html>
