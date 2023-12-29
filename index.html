@@ -68,7 +68,7 @@ BODY {
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SPNet
+    <title>JCRNet
 </title>
 
     <!-- Bootstrap -->
@@ -145,8 +145,8 @@ BODY {
 <table width="100%" border="0">
   <tbody>
   <tr>
-    <th scope="col"><img src="./figures/framework.png" width="98%"></th></tr></tbody></table>
-<p class="styleCaption" align="justify"> Fig. 1: Overall architecture of the Saliency Prototype Network. After feature extraction, the RGB and D/T images perform prototype clustering separately to focus on salient regions before performing cross-modal feature fusion. On the right side, the AMSE module generates parameters for cross-modal fusion, guiding the fusion process but not directly participating in the overall architecture.
+    <th scope="col"><img src="./imgs/f-net.png" width="98%"></th></tr></tbody></table>
+<p class="styleCaption" align="justify"> Fig. 1: Details of the JCRNet architecture. Specifically, the proposed JCRNet consists of three stages: feature extraction stage (FES), joint refinement stage (JRS), and illumination adjustment stage (IAS). The three stages work together to enhance low-light images, thereby balancing brightness, color, and exposure.
 </p>
 <br><br>
 </div>
@@ -161,9 +161,8 @@ BODY {
 <table width="100%" border="0">
   <tbody>
   <tr>
-    <th scope="col"><img src="./figures/f1.png" width="98%"></th></tr></tbody></table>
-<p class="styleCaption" align="justify">Table. 1: S-measure, adaptive F-measure, adaptive E-measure, MAE comparisons with different RGB-D models. The best result is
-in bold. "¯¯" means that the method does not publish test results for this dataset or code.
+    <th scope="col"><img src="./imgs/f-index1.png" width="98%"></th></tr></tbody></table>
+<p class="styleCaption" align="justify">Table. 1: Average performance comparison between multiple method and the proposed method enhancement on LOL, COCO and MIT datasets. OursPT is based on the PyTorch framework, while OursMS is based on the MindSpore framework. The best, second-best, and third-best scores are represented by red, blue, and green respectively.
 </p>
 <br><br>
 
@@ -171,9 +170,8 @@ in bold. "¯¯" means that the method does not publish test results for this dat
 <table width="100%" border="0">
   <tbody>
   <tr>
-    <th scope="col"><img src="./figures/f2.png" width="98%"></th></tr></tbody></table>
-<p class="styleCaption" align="justify">Table. 2: S-measure, adaptive F-measure, adaptive E-measure, MAE comparisons with different RGB-T models. First column
-represents the RGB-D methods adapted for RGB-T. Second column represents conventional RGB-T methods. Third column represents CNN-based RGB-T methods. Fourth column represents Transform-based RGB-T methods.
+    <th scope="col"><img src="./imgs/f-index2.png" width="98%"></th></tr></tbody></table>
+<p class="styleCaption" align="justify">Table. 2: Average performance comparison between multiple method and the proposed method enhancement on multiple no-reference dataset. OursPT is based on the PyTorch framework, while OursMS is based on the MindSpore framework. The best, second-best, and third-best scores are represented by red, blue, and green respectively. (T: Traditional methods. DL: Deep learning)
 </p>
 <br><br>
 </div>
@@ -181,8 +179,8 @@ represents the RGB-D methods adapted for RGB-T. Second column represents convent
     <table width="100%" border="0">
   <tbody>
   <tr>
-    <th scope="col"><img src="./figures/f3.png" width="98%"></th></tr></tbody></table>
-<p class="styleCaption" align="justify"> Fig. 2: P-R curves comparisons of different models on six datasets of RGB-D and RGB-T.
+    <th scope="col"><img src="./imgs/fig4.png" width="98%"></th></tr></tbody></table>
+<p class="styleCaption" align="justify"> Fig. 2: Visualizing the results of the LOL dataset. For clarity, the magnified parts of the images are displayed.
 </p>
 <br><br>
 </div>
@@ -196,8 +194,68 @@ represents the RGB-D methods adapted for RGB-T. Second column represents convent
 <table width="100%" border="0">
   <tbody>
   <tr>
-    <th scope="col"><img src="./figures/f5.png" width="98%"></th></tr></tbody></table>
-<p class="styleCaption" align="justify"> Fig. 3: Visual comparison results with other the state-of-the-art RGB-D models.
+    <th scope="col"><img src="./imgs/fig5.png" width="98%"></th></tr></tbody></table>
+<p class="styleCaption" align="justify"> Fig. 3: Visualizing the results of the COCO dataset. For a clear comparison of the visual effects, the error images between the ground-truth image and each enhancement result are shown in the lower left corner.
+</p>
+<br><br>
+</div>
+
+	
+<div class="container">
+<a name="example"></a>
+<p class="STYLESection" align="center">Qualitative Evaluation</p>
+<hr style="BORDER-LEFT-STYLE: none; BORDER-TOP: gray 3px groove; HEIGHT: 0px; BORDER-BOTTOM-STYLE: none; BORDER-RIGHT-STYLE: none">
+
+<table width="100%" border="0">
+  <tbody>
+  <tr>
+    <th scope="col"><img src="./imgs/fig6.png" width="98%"></th></tr></tbody></table>
+<p class="styleCaption" align="justify"> Fig. 4: Visualizing the results of the NPE dataset. For clarity, the magnified parts of the images are displayed.
+</p>
+<br><br>
+</div>
+
+
+<div class="container">
+<a name="example"></a>
+<p class="STYLESection" align="center">Qualitative Evaluation</p>
+<hr style="BORDER-LEFT-STYLE: none; BORDER-TOP: gray 3px groove; HEIGHT: 0px; BORDER-BOTTOM-STYLE: none; BORDER-RIGHT-STYLE: none">
+
+<table width="100%" border="0">
+  <tbody>
+  <tr>
+    <th scope="col"><img src="./imgs/fig7.png" width="98%"></th></tr></tbody></table>
+<p class="styleCaption" align="justify"> Fig. 5: Visualizing the results of the VV dataset. For clarity, the magnified parts of the images are displayed.
+</p>
+<br><br>
+</div>
+
+
+<div class="container">
+<a name="example"></a>
+<p class="STYLESection" align="center">Qualitative Evaluation</p>
+<hr style="BORDER-LEFT-STYLE: none; BORDER-TOP: gray 3px groove; HEIGHT: 0px; BORDER-BOTTOM-STYLE: none; BORDER-RIGHT-STYLE: none">
+
+<table width="100%" border="0">
+  <tbody>
+  <tr>
+    <th scope="col"><img src="./imgs/fig8.png" width="98%"></th></tr></tbody></table>
+<p class="styleCaption" align="justify"> Fig. 6: Visualizing the results of the Exdark dataset. For clarity, the magnified parts of the images are displayed.
+</p>
+<br><br>
+</div>
+
+
+<div class="container">
+<a name="example"></a>
+<p class="STYLESection" align="center">Qualitative Evaluation</p>
+<hr style="BORDER-LEFT-STYLE: none; BORDER-TOP: gray 3px groove; HEIGHT: 0px; BORDER-BOTTOM-STYLE: none; BORDER-RIGHT-STYLE: none">
+
+<table width="100%" border="0">
+  <tbody>
+  <tr>
+    <th scope="col"><img src="./imgs/fig9.png" width="98%"></th></tr></tbody></table>
+<p class="styleCaption" align="justify"> Fig. 7: Visualizing the results of the MEF dataset. For clarity, the magnified parts of the images are displayed.
 </p>
 <br><br>
 </div>
@@ -233,12 +291,12 @@ represents the RGB-D methods adapted for RGB-T. Second column represents convent
 <p class="lead">
     If you find this useful in your work, please consider citing the following reference:
     <div class="highlight">
-    <pre> <code>@Article{SPNet,
-    author    = {Zihao Zhang, Jie Wang, Yahong Han},
-    title     = {Saliency Prototype for RGB-D and RGB-T Salient Object Detection},
-    journal   = {},
+    <pre> <code>@Article{JCRNet,
+    author    = {Nana Yu, Hong Shi, Yahong Han},
+    title     = {Joint Correcting and Refinement for Balanced Low-Light Image Enhancement},
+    journal   = {IEEE Transaction on Multimedia},
     year      = {2023},
-    doi       = {}
+    doi       = {10.1109/TMM.2023.3348333}
     }
 </code> </pre> 
 
@@ -254,7 +312,7 @@ represents the RGB-D methods adapted for RGB-T. Second column represents convent
 
 <p class="STYLEAuthor">
 Any question regarding this work can be addressed to 
-<a href="zhangzihao2490@tju.edu.cn">zhangzihao2490@@tju.edu.cn</a>.
+<a href="yunana@tju.edu.cn">yunana@tju.edu.cn</a>.
 </p
 <br><br>
 
